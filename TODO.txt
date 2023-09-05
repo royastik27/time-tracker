@@ -1,0 +1,56 @@
+jwt.sign(payload, secretOrPrivateKey, [options, callback])
+-> Store jwt in httpOnly cookie (best place)
+res.cookie('cookieName',randomNumber, { maxAge: 900000, httpOnly: true })
+
+# test findOneAndUpdate(), instead use update:
+{
+  acknowledged: true,
+  modifiedCount: 0,
+  upsertedId: null,
+  upsertedCount: 0,
+  matchedCount: 0
+}
+# Role based Access Control
+
+# mongoDB query using username O(n) ? does it search one by one?
+
+# Admin access route ->
+  1. DB Search
+  2. Token
+  *. Role based. Pros: 
+    -> Can identify Premium users
+    -> Give some users special functionality
+
+# Verify /delete-account
+
+# ISODate
+
+# JSON vs BSON
+
+# Aggregation pipelines (update on condition)
+
+# Find (returns FindCursor) vs FindOne() ( returns promise )
+
+# test protected routes
+
+# test validateToken locals benefits with change password
+
+# see someone else's data with another one's token ===> always use token id for operations so that no one can use another one's token to fuck him/her. [ Note: If token is stolen, he/she can be fucked completely ]
+
+# is it mandatory to use path option while deleting a cookie
+
+# db.update = db.updateOne (option in update {multi: true} doesn't exist)
+
+# should i use iat? ===> Optional
+
+# jwtToken.userID ===> string 
+
+# What db.anyfunction() returns - (All promise except some exceptional like Find) http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+
+1. get myposts (token er username onujaie data return)
+2. my profile data like birthday
+
+
+<!-- TO READ -->
+
+# Array operations in mongoDB

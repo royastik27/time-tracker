@@ -1,0 +1,13 @@
+# ra27
+
+POST  http://localhost/user/change-password HTTP/1.1
+content-type: application/json
+cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SUQiOiI2NGVhZjgxYjUyY2JjYTEwMTBlMDU1ZDEiLCJpYXQiOjE2OTM3NjI2MzJ9.DglyrakjSBBUOROWJoxrOpy6kCDvmgZg133mlHSziPs; Path=/; HttpOnly
+
+{
+    "username": "admin2",
+    "password": "admin2",
+    "newPassword": "new"
+}
+
+# token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SUQiOiI2NGVhZjgwZDUyY2JjYTEwMTBlMDU1ZDAiLCJpYXQiOjE2OTM1MTE2NDl9._3xWV3cLNbLAlMEjBWN28wjPeDcLAu6F5c113hoLVbM; Path=/; HttpOnly

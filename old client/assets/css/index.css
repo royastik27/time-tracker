@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-size: 1.2rem;
+    background-color: darkslategrey;    
+}
+
+#main-container {
+}
+
+#container {
+    margin: 0.5rem;
+    background-color: gray;
+    border-radius: 0.5rem;
+}
+
+#main-content {
+    padding: 1rem;
+    height: 700px;
+}
